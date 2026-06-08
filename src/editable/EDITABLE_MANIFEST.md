@@ -31,7 +31,7 @@ src/editable/theme/editable-global.css
 
 ## AI Redesign Rule
 
-When giving this folder to AI, ask it to rewrite `src/editable/**` only. It may fully redesign body, nav, footer, page layout, cards, task pages, and detail pages. It must preserve exported component/function names and props.
+When giving this folder to AI, ask it to rewrite `src/editable/**` only. It may fully redesign body, nav, footer, page layout, cards, task pages, and detail pages. It must preserve exported component/function names and props, keep routes working, and render safely when optional post fields are missing.
 
 ## Do Not Touch
 

@@ -12,17 +12,17 @@ export type Slot4VisualPreset =
 export const visualPresets = {
   'editorial-paper': {
     label: 'Editorial Paper',
-    mood: 'calm magazine authority',
-    fontDirection: 'serif headlines with quiet sans body',
+    mood: 'calm premium library',
+    fontDirection: 'confident display headings with clean reading sans body',
     colors: {
-      background: '#f7efe3',
-      foreground: '#201711',
-      muted: '#7b6253',
-      primary: '#261811',
-      accent: '#b76e45',
-      surface: '#fffaf2',
+      background: '#f7f9f4',
+      foreground: '#15333a',
+      muted: '#6d8681',
+      primary: '#15333a',
+      accent: '#35858e',
+      surface: '#ffffff',
     },
-    shape: 'soft editorial cards with fine borders',
+    shape: 'framed white panels, blue bands, and soft botanical neutrals',
   },
   'luxury-atelier': {
     label: 'Luxury Atelier',
@@ -118,8 +118,8 @@ export const visualSystem = {
       : slot4BrandConfig.productKind === 'editorial'
         ? 'editorial-paper'
         : slot4BrandConfig.productKind === 'directory'
-          ? 'tech-directory'
-          : 'organic-journal',
+          ? 'editorial-paper'
+          : 'editorial-paper',
   radius: {
     sm: '0.75rem',
     md: '1.25rem',
