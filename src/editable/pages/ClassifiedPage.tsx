@@ -1,12 +1,13 @@
 import { EditableTaskArchiveRoute, taskMetadata } from '@/editable/pages/TaskArchivePage'
 
 export const revalidate = 3
+const baseRoute = '/classified'
 
-export const generateMetadata = () => taskMetadata('classified', '/classified')
+export const generateMetadata = () => taskMetadata('classified', baseRoute)
 
 export async function ClassifiedPageTaskPage({
   searchParams,
-  basePath = '/classified',
+  basePath = baseRoute,
 }: {
   searchParams?: Promise<{ category?: string; page?: string }>
   basePath?: string

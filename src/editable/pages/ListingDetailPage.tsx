@@ -1,15 +1,16 @@
 import { EditableTaskDetailRoute, generateEditableDetailMetadata } from '@/editable/pages/TaskDetailPage'
 
 export const revalidate = 3
+const taskKey = 'listing'
 
 export async function generateStaticParams() {
   return []
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  return generateEditableDetailMetadata('listing', params)
+  return generateEditableDetailMetadata(taskKey, params)
 }
 
 export default async function ListingDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  return <EditableTaskDetailRoute task="listing" params={params} />
+  return <EditableTaskDetailRoute task={taskKey} params={params} />
 }

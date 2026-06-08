@@ -16,7 +16,7 @@ export function getEditableBodyProps(): EditableBodyProps {
   return {
     dataSiteShell: recipe.homeLayout,
     dataMotionPack: recipe.motionPack,
-    className: `${brandPack.bodyClassName} ${brandPack.fontClassName} ${brandPack.paletteClassName}`,
+    className: `${brandPack.bodyClassName} ${brandPack.fontClassName} ${brandPack.paletteClassName} antialiased`,
     style: editableRootStyle,
   }
 }
