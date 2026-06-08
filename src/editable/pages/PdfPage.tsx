@@ -1,12 +1,13 @@
 import { EditableTaskArchiveRoute, taskMetadata } from '@/editable/pages/TaskArchivePage'
 
 export const revalidate = 3
+const baseRoute = '/pdf'
 
-export const generateMetadata = () => taskMetadata('pdf', '/pdf')
+export const generateMetadata = () => taskMetadata('pdf', baseRoute)
 
 export async function PdfPageTaskPage({
   searchParams,
-  basePath = '/pdf',
+  basePath = baseRoute,
 }: {
   searchParams?: Promise<{ category?: string; page?: string }>
   basePath?: string

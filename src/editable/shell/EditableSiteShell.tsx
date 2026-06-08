@@ -7,7 +7,7 @@ export function EditableSiteShell({ children, className = '' }: { children: Reac
   return (
     <div className={`${dc.shell.page} flex min-h-screen flex-col ${className}`}>
       <EditableNavbar />
-      <div className="min-h-0 flex-1">{children}</div>
+      <div className="min-h-0 flex-1 overflow-x-clip">{children}</div>
       <EditableFooter />
     </div>
   )
